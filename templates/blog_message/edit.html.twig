@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit BlogMessage{% endblock %}
+
+{% block body %}
+    <h1>Edit BlogMessage</h1>
+
+    {{ include('blog_message/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('blog_message_index') }}">back to list</a>
+
+    {{ include('blog_message/_delete_form.html.twig') }}
+{% endblock %}
